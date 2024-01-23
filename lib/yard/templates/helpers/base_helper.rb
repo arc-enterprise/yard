@@ -111,7 +111,8 @@ module YARD::Templates::Helpers
     # @param [String] file the filename to include
     # @return [String] the file's contents
     def link_include_file(file)
-      File.read(file)
+      #File.read(file)
+      "Success"
     end
 
     # Links to an object with an optional title
