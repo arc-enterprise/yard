@@ -112,7 +112,7 @@ module YARD::Templates::Helpers
     # @return [String] the file's contents
     def link_include_file(file)
       #File.read(file)
-      "Success"
+      raise "THIS IS BEING USED"
     end
 
     # Links to an object with an optional title
