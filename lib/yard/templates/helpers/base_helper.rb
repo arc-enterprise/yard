@@ -64,7 +64,11 @@ module YARD::Templates::Helpers
             log.warn "Cannot include file from path `#{file}'"
             ""
           elsif File.file?(file)
-            link_include_file(file)
+            if file.split(".").last == "mermaid"
+              "<div class=mermaid>#{File.read(file)}</div>"
+            else
+              link_include_file(file)
+            end
           else
             log.warn "Cannot find file at `#{file}' for inclusion"
             ""
@@ -111,8 +115,7 @@ module YARD::Templates::Helpers
     # @param [String] file the filename to include
     # @return [String] the file's contents
     def link_include_file(file)
-      #File.read(file)
-      raise "THIS IS BEING USED"
+      File.read(file)
     end
 
     # Links to an object with an optional title
