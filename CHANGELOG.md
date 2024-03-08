@@ -1,5 +1,21 @@
 # main
 
+# [0.9.36] - February 29th, 2024
+
+[0.9.36]: https://github.com/lsegal/yard/compare/v0.9.35...v0.9.36
+
+- Further XSS fixes for generated frameset pages (#1538)
+- Improve tests for Ruby 3.3 compatibility (#1519, #1531)
+- Documentation improvements (#1524)
+
+# [0.9.35] - February 28th, 2024
+
+[0.9.35]: https://github.com/lsegal/yard/compare/v0.9.34...v0.9.35
+
+- Fix possible XSS on generated YARD frameset pages (thanks to @RedYetiDev for finding and patching) (2069e2b).
+- Fix errors when using `@option` on non-method objects (#1508)
+- Support Ruby 3.3 changes in Ripper parser (#1510)
+
 # [0.9.34] - April 12nd, 2023
 
 [0.9.34]: https://github.com/lsegal/yard/compare/v0.9.33...v0.9.34
